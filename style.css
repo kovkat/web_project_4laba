@@ -1,0 +1,390 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    }
+    *,
+    *:before,
+    *:after {
+     box-sizing: border-box;
+    }
+
+.nav_:hover{
+    opacity: 0.5;
+    
+}
+
+header {
+    width: 100%;
+    background-color: rgb(163, 163, 163);
+    color: #fff;
+    padding: 20px;
+}
+.title{
+    font-family: Copperplate, Papyrus, fantasy ;
+    font-size: 50px;
+}
+#f1{
+    padding: auto;
+}
+#m_f{
+    padding-left: 150px;
+}
+#sale{
+    text-align: center;
+    
+}
+#coll{
+    text-justify: center;
+    float: left;
+    padding-top: 100px;
+    padding-left: 80px;
+}
+#logo{
+    width: 100px ;
+    border-radius: 50px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav_ {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    
+}
+
+  #dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  #dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  #dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  #dropdown:hover #dropdown-content {
+    display:contents;
+}
+
+
+main h2 {
+    color: #333;
+}
+
+#search {
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+#search:hover{
+    opacity: 0.75;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.photomain {
+    width: 280px; 
+    height: 280px;
+    border: 10px solid #ccc; 
+    box-sizing: border-box;
+}
+tr:hover {background-color: #D6EEEE;}
+tr {
+    border-bottom: 1px solid #ddd;
+  }
+
+
+
+footer {
+    width: 100%;
+    background-color: rgb(163, 163, 163);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    align-items: center;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+.communication{
+    display: flex;
+    margin: 50px 0;
+}
+.communication_item{
+    text-align: center;
+    width: 20%;
+}
+.communication_icon{
+    margin-bottom: 20px;
+}
+.communication_text{
+    font-size: 15px;
+}
+
+/*Category*/
+
+
+.category{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.category_item{
+    margin: 0;
+    width: 33.33333%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.category_item:hover .category_content {
+    opacity:1;
+}
+.category_icon{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0) ;
+}
+.category_content{
+    margin: 0;
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(250, 236, 223, 0.582);
+    opacity: 0;
+    transition: opacity .2s linear;
+    text-align: center;
+
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.category_name{
+    margin: auto;
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+}
+
+/*Cat*/
+.cat{
+    margin: 0 -30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cat_item{
+    width: cal(100%/3 );
+    padding: 0 35px;
+    margin-bottom: 90px;
+    position: relative;
+}
+.product {
+    border: black 1px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+.product_img{
+    display: block;
+    margin: 0 auto 15px;
+    height: 375px;
+    width: 375px;
+}
+.product_title{
+    margin:0 0 5px;
+    font-weight: 900;
+    font-size: 22px;
+}
+.product_price_value{
+    margin: 5px;
+    font-size: 22px;
+    font-weight: 900;
+}
+.product_buttom{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pr_btn{
+    margin: 5px;
+    box-shadow: none;
+    background-color: rgb(161, 159, 159);
+    height: 48px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+
+}
+.cat_item::before{
+    background: rgb(165, 164, 164);
+    content: ' ';
+    align-items: center;
+    left:0;
+    width: 3px;
+    height: 100%;
+    position: absolute ;
+    transform: translateX(-50%);
+}
+.cat_item:nth-of-type(3n + 1)::before {
+    content: none;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* laba 4   */
+  @media (max-width: 1275px) {
+    .cat_item {
+      width: 50%;
+    }
+    .photomain{
+        width: 185px;
+        height: 185px;
+        border: 5px solid #ccc; 
+        box-sizing: border-box;
+    }
+
+    #logo {
+        width: 75px;
+    }
+    .nav_{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 40px;
+    }
+
+    #search{
+        width: 100px;
+    }
+    .cat_item:nth-of-type(even)::before {
+      content: '';
+    }
+    .cat_item:nth-of-type(odd)::before {
+      content: none;
+    }
+
+    .category_item{
+        height: 275px;
+    }
+    .communication_text{
+        font-size: 13px;
+    }
+
+  }
+  
+  @media (max-width: 800px) {
+    .cat_item {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    #logo{
+        width:50px;
+    }
+
+    .nav_{
+        font-size: 10px;
+        padding: 5px;
+    }
+    #search{
+        width: 90px;
+        height: 25px;
+    }
+    #bask{
+        width: 30px;
+    }
+    .cat_item:nth-of-type(n)::before {
+      content: none;
+    }
+
+    .title{
+        font-size: 35px;
+    }
+
+    #m_f{
+        height: 200px;
+        width: 400px;
+    }
+    .photomain{
+        width: 122px;
+        height: 122px;
+        border: 3px solid #ccc; 
+    box-sizing: border-box;
+    }
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .cat_product {
+      width: 350px;
+      max-width: 100%;
+      margin: 0 auto;
+      border-bottom: 2px solid #f7f7f7;
+      padding-bottom: 50px;
+    }
+  
+    .cat_item:last-of-type {
+      margin-bottom: 0;
+    }
+  
+    .cat_item:last-of-type .cat_product {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .category_item{
+        height: 175px;
+    }
+    .category_name{
+        font-size: 18px;
+    }
+    .communication_text{
+        font-size: 7px;
+    }
+  }
