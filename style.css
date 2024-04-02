@@ -286,9 +286,7 @@ footer a {
         box-sizing: border-box;
     }
 
-    #logo {
-        width: 75px;
-    }
+
     .nav_{
         font-size: 20px;
     }
@@ -314,16 +312,20 @@ footer a {
     }
 
   }
-  
+   
+
+@media (max-width: 800px) and (max-width: 1275px){
+    #logo{
+        width:50px;
+    }
+}
+
   @media (max-width: 800px) {
     .cat_item {
       width: 100%;
       margin-bottom: 50px;
     }
 
-    #logo{
-        width:50px;
-    }
     
     .nav_{
         font-size: 10px;
